@@ -7,6 +7,5 @@ class PrefixedReminder:
         self.text = prefix + '<placeholder_text>'
 
 class PoliteReminder(PrefixedReminder):
-    super().__init__()
-
-    
+    def __init__(text):
+        super().__init__('please')
