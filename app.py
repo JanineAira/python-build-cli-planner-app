@@ -1,9 +1,9 @@
 from src.database import add_reminder, list_reminders
-from src.deadline_reminders import DateReminder, DeadlinedReminder
+from src.deadlined_reminders import DateReminder, DeadlinedReminder
 from src.external_reminders import EveningReminder
-from src.reminder import PoliteReminder
+# from src.reminder import PoliteReminder
 
-DeadlinedReminder.register(PoliteReminder)
+# DeadlinedReminder.register(PoliteReminder)
 
 def handle_input():
     choice = input("Choice: ")
